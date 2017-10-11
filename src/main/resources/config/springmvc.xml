@@ -36,7 +36,11 @@
     -->
         <bean class = "org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
 
-    <!-- 视图解析器 -->
+    <!--
+        视图解析器
+        用于解析jsp,默认使用jstl标签，classpath得有jstl的包
+     -->
+        <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"/>
 
 
 </beans>
